@@ -1,0 +1,1484 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap');
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+* {
+   
+    
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+}
+
+body{
+    background:black
+}
+
+
+
+
+
+
+ #content {
+    filter: blur(10px); 
+    transition: filter 0.3s ease-in-out; 
+} 
+
+#content.visible {
+    filter: none; 
+}  
+
+
+#navigation-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.nav-btn1 {
+    background-color: #A95BF3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-btn1 i {
+    font-size: 24px;
+}
+
+.nav-btn1:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+ 
+
+
+.the_header {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+
+.list1, .The_list{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+}
+
+.The_list a{
+    text-decoration: none;
+   
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);  
+    
+    
+}
+
+a:hover{
+   
+    transition: ease-in-out .25s;
+    border: 1px solid none;
+    padding: 10px;
+    background-color: #A95BF3;
+    border-radius: 20px;
+}
+
+.The_Title{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.The_Title h1{
+    padding: 10px;
+    font-size: clamp(3rem, 8vw, 5rem);  
+    color: #A95BF3;
+    text-shadow: 2px 3px 2px white;
+    
+}
+
+#sub_title{
+    text-shadow: 2px 3px 2px #A95BF3;
+    display: flex;
+    justify-content: center;
+}
+
+.intro p{
+    font-size: clamp(1.2rem, 2.5vw, 2rem);  
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+ 
+
+.The_Title:hover{
+    cursor:pointer;
+}
+
+.intro{
+    padding: 30px;
+}
+
+.intro i{
+    font-size: clamp(5rem, 10vw, 8rem);  
+    display: flex;
+    justify-content: center;
+     
+}
+
+.our_options h1{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(2rem, 6vw, 4rem);  
+    color: #A95BF3;
+  
+}
+
+ 
+.sub_optionss{
+    display: flex;
+    justify-content: center;
+    gap: clamp(20px, 10vw, 100px);  
+    flex-wrap: wrap;
+}
+
+.sub_optionss span{
+    font-size: clamp(5rem, 10vw, 8rem);  
+    padding: 30px;
+}
+
+
+.sub_optionss span:hover{
+    color:#A95BF3;
+    cursor: pointer;
+}
+
+.about .about_car h1{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(2rem, 6vw, 4rem); 
+    color: #A95BF3;
+}
+
+.car_design{
+    display: flex;
+    justify-content: center;
+     
+}
+
+.Toyota1 {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+.about_toyota{
+    font-size: 30px;
+    
+    padding: 50px;
+    display: flex;
+   
+    
+}
+
+.about{
+    margin-top: 130px;
+}
+
+h1:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.car_design{
+    display: flex;
+    justify-content: center;
+}
+
+.Toyota1 {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 500px;
+    
+}
+
+.circle {
+    border: 1px solid #A95BF3;
+    width: 600px;
+    margin-right: 200px;
+    border-radius: 55%;   
+    background-color: #A95BF3;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  
+    transition: all 0.5s ease-in-out; 
+}
+
+.circle-title {
+    position: absolute;
+    top: 5px;  
+    color: white;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);  
+    font-weight: bold;
+    opacity: 0;  
+    transition: opacity 0.5s ease-in-out;  
+    pointer-events: none;  
+}
+
+.circle-title1 {
+    position: absolute;
+    top: 100px;  
+    right: 70px;
+    color: white;
+    font-size: clamp(5rem, 10vw, 8rem);  
+    font-weight: bold;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;  
+    pointer-events: none;  
+}
+
+.circle:hover {
+    width: clamp(400px, 80vw, 900px); 
+    border-radius: 10%;   
+    cursor: pointer;
+}
+
+.circle:hover .circle-title,
+.circle:hover .circle-title1 {
+    opacity: 1;
+}
+
+.about_car h1:hover{
+cursor: pointer;
+color: white;
+}
+
+
+
+
+ .specifications_car h1{
+    font-size: clamp(2rem, 6vw, 4rem);  
+    display: flex;
+    justify-content: center;
+    color: #A95BF3;
+ }
+
+
+
+.specification_boxes{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+ 
+
+.section1, .section2 {
+    width: clamp(300px, 80vw, 550px);  
+    height: auto;
+    font-size: clamp(1rem, 2vw, 1.5rem);  
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 15px 8px #A95BF3;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.section1 p, .section2 p {
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+ .section1 {
+    width: 550px;
+    height: 300px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 15px 8px #A95BF3;
+    transition: all 0.3s ease-in-out;  
+    overflow: hidden;  
+}
+
+.section1 p {
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    transition: color 0.3s ease-in-out;  
+}
+
+
+.section1 h1 {
+    color: #A95BF3;
+    transition: color 0.3s ease-in-out;  
+}
+
+.section1:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);  
+}
+
+.section1:hover h1,
+.section1:hover p {
+    color: white;  
+}
+ 
+
+.car_actual_costs h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #A95BF3;
+  
+}
+
+.car_actual_costs:hover .the_cost{
+    color: white;
+}
+
+
+.section2 {
+    width: 550px;
+    height: 200px;  
+    font-size: 20px;
+    border: 1px solid #A95BF3;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 0px 15px 8px #A95BF3;
+    transition: all 0.3s ease-in-out; 
+    overflow: hidden;  
+    position: relative;  
+    
+}
+
+.section2 h1 {
+    position: relative;  
+    z-index: 2;  
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.section2 .content {
+    opacity: 0;  
+    height: 0;  
+    transition: all 0.3s ease-in-out;  
+    padding: 0 10px;  
+   
+}
+
+.section2:hover {
+    height: 400px;  
+    
+}
+
+.section2 span{
+    font-style: italic;
+}
+
+.section2:hover span{
+    cursor: pointer;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    color: #af0000;
+    font-weight: bolder;
+    
+}
+
+.section2:hover p{
+    color: white;
+    font-weight: bolder;
+}
+
+.section2:hover .content {
+    opacity: 1;  
+    height: auto; 
+    padding: 10px;  
+}
+
+.estimation_costs h1 {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(2rem, 6vw, 4rem);  
+    color: #A95BF3;
+}
+
+
+.estimation_costs p {
+    padding: 30px;
+    font-size: clamp(1rem, 2vw, 1.5rem);  
+    width: 100%;
+    max-width: 2400px;
+}
+
+
+#cost-input {
+    width:30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-self: center;
+}
+
+#cost-input:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.7);
+    outline: none;
+}
+
+ 
+#predict-btn {
+    padding: 10px 20px;
+    background-color: #A95BF3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+   
+}
+
+#predict-btn1 {
+    padding: 10px 20px;
+    background-color: #A95BF3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+ 
+}
+
+#predict-btn2 {
+    padding: 10px 20px;
+    background-color: #A95BF3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+ 
+}
+
+#predict-btn:hover {
+    background-color: #3700b3;
+}
+
+#predict-btn1:hover {
+    background-color: #3700b3;
+}
+
+#predict-btn2:hover {
+    background-color: #3700b3;
+}
+
+#buttonss{
+  
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+ 
+.swal2-popup {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.estimation_costs input{
+    color: black;
+}
+
+
+.swal2-html-container td, th {
+    color: black;
+}
+
+#swal2-html-container p, strong {
+    color: black;
+}
+
+.the_digitaltwin h1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: #A95BF3;
+}
+
+.the_digitaltwin p{
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-details {
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+#language-toggle {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#language-toggle:hover {
+    color: white;
+    background-color: #A95BF3;
+}
+
+#toggle-text:hover {
+    color: white;
+}
+
+#language-toggle:hover i{
+    color: white;
+}
+
+#language-toggle i {
+    font-size: 2px;
+    color: #333;
+  
+}
+
+#toggle-text {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+
+.card {
+    flex: 0 0 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-details h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-details p {
+    color: #666;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.the_header {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+     
+}
+
+.list1 {
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+}
+
+
+.The_list {
+    list-style: none;
+    display: flex;
+}
+
+.The_list li {
+    margin: 0 15px;
+}
+
+.The_list a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+@media (max-width: 320px) {
+    
+    .The_list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    
+
+    .menu-toggle {
+        display: block;
+        margin-right: 10px; 
+    }
+
+    .The_list.active {
+        display: flex;
+    }
+
+    .The_list li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .The_list a {
+        font-size: 1.2rem;  
+    }
+
+    
+    .The_Title h1 {
+        font-size: 2.5rem;  
+    }
+
+    
+    .intro p {
+        font-size: 1.2rem;  
+    }
+
+    .intro i {
+        font-size: 4rem;  
+    }
+
+     
+    .our_options h1 {
+        font-size: 2rem;  
+    }
+
+    .sub_optionss span {
+        font-size: 4rem;  
+    }
+
+     
+    .about .about_car h1 {
+        font-size: 2rem;  
+    }
+
+    .Toyota1 {
+        width: 100%;  
+        height: auto;  
+        padding-right: 0;  
+    }
+
+    .circle {
+        width: 200px;  
+        height: 200px;  
+        margin-left: 0;  
+    }
+
+    .circle-title {
+        font-size: 1.2rem;  
+    }
+
+    .circle-title1 {
+        font-size: 3rem;  
+    }
+
+     
+    .specifications_car h1 {
+        font-size: 2rem;  
+    }
+
+    .section1, .section2 {
+        width: 100%;  
+        height: auto;  
+    }
+
+    .section1 p, .section2 p {
+        font-size: 1rem;  
+    }
+
+    
+    .estimation_costs h1 {
+        font-size: 2rem;  
+    }
+
+    .estimation_costs p {
+        font-size: 1rem; 
+    }
+
+  
+    .the_digitaltwin h1 {
+        font-size: 2rem;
+    }
+
+    .the_digitaltwin p {
+        font-size: 1rem; 
+    }
+
+   
+    .cards-container {
+        gap: 10px; 
+    }
+
+    .card {
+        width: 100%; 
+    }
+
+  
+    #language-toggle {
+        top: 20px; 
+        right: 10px; 
+    }
+
+   
+    .slider-container {
+        width: 90%; 
+    }
+
+   
+    #navigation-buttons {
+        bottom: 10px; 
+        right: 10px; 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .The_list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        z-index: 1;
+    }
+
+   
+    .The_list li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+   
+    .menu-toggle {
+        display: block;
+        margin-right: 300px;
+    }
+
+
+    .The_list.active {
+        display: flex;
+    }
+
+    #main-title{
+        font-size: 50px;
+    }
+
+    p.intro1 {
+        font-size: 20px; 
+        line-height: 1.6; 
+        text-align: justify; 
+        margin: 20px 0; 
+    }
+    
+    .our_options>h1{
+        font-size: 20px;
+    }
+    
+
+    .about{
+        margin-top: 20px;
+    }
+
+   .about .about_car h1{
+    font-size: 30px;
+    display: flex;
+    
+    
+  
+    margin-left: 50px;
+    padding: 0px;
+   }
+   
+   .car_design .circle{
+    width: 300px;
+    height: 300px;
+   }
+   
+   .Toyota1{
+    width: 480px;
+    height: 300px;
+    margin-left: 330px;
+    margin-top: 80px;
+   }
+
+   .circle-title{
+    font-size: 20px;
+   }
+
+   .circle-title1{
+    font-size: 80px;
+    top: 50px;
+    right: 15px;
+   }
+    
+   .about_toyota{
+    font-size: 20px; 
+    line-height: 1.6; 
+    text-align: justify; 
+    margin: 20px 0; 
+   }
+
+   div:where(.swal2-container).swal2-center>.swal2-popup {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center center;
+    width: 350px;
+    height: 600px;
+    margin-right: auto;
+    bottom: auto;
+}
+
+
+    .specifications_car h1{
+        font-size: 30px;
+    }
+
+    .section1 p{
+        font-size: 18px;
+    }
+
+    .car_actual_costs>h1{
+        font-size: 25px;
+    }
+ 
+    .costs1 .specification_boxes .section2 h1{
+        font-size: 20px;
+    }
+
+    .section2 .content {
+        opacity: 5; 
+      font-size: 10px;
+      
+       
+    }
+
+    .estimation_costs h1{
+        font-size: 25px;
+        margin-left: 30px;
+        text-align:center;
+        
+    }
+
+
+    .the_digitaltwin h1{
+        font-size: 25px;
+    }
+
+    .the_digitaltwin p{
+        font-size: 20px; 
+        line-height: 1.6; 
+        text-align: justify; 
+        margin: 20px 0;
+    }
+
+    #btn2{
+        margin-right: 20px;
+    }
+     
+    .nav-btn1{
+        display: none;
+    }
+   
+    #language-toggle {display: none;}
+
+   #cost-input{
+        width: 200px;
+    }
+
+    #predict-btn,#predict-btn1,#predict-btn2{
+       width: 90px;
+       margin-top: 10px;
+    }
+
+   
+.slider-container {
+    position: relative;
+    width: 75%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.section2{
+    height: 90px;
+}
+
+.section2 p{
+    font-size: 15px;
+}
+
+.section2:hover .content {
+    opacity: 1; 
+    height: 10px; 
+     
+}
+
+
+ 
+
+    
+}
+
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .The_list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .The_list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .The_list.active {
+        display: flex;
+    }
+
+    .The_Title {
+        font-size: 24px;
+    }
+
+    .intro1 {
+        font-size: 16px;
+    }
+
+    .specification_boxes {
+        display: block;
+    }
+
+    .section1 {
+        margin-bottom: 20px;
+    }
+
+    .section1 h1 {
+        font-size: 18px;
+    }
+
+    .estimation_costs {
+        padding: 20px;
+    }
+
+    .list1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .The_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .The_list li {
+        margin: 0 20px;
+    }
+
+    .The_Title {
+        font-size: 30px;
+    }
+
+    .intro1 {
+        font-size: 18px;
+    }
+
+    .specification_boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section1 {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .specification_boxes .section1 h1 {
+        font-size: 20px;
+    }
+
+    .estimation_costs {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .estimation_costs input {
+        width: 60%;
+        padding: 10px;
+    }
+
+    .estimation_costs button {
+        padding: 10px;
+        margin: 5px;
+    }
+
+  .The_list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    z-index: 1;
+
+  
+}
+
+.The_list li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+.The_list.active {
+    display: flex;
+}
+
+    
+.list1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .The_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px; 
+    }
+
+    .menu-toggle {
+        display: none; 
+    }
+
+    .The_list a {
+        font-size: 1.5rem; 
+    }
+
+   
+     .The_Title h1 {
+        font-size: 4rem; 
+    }
+
+    
+    .intro p {
+        font-size: 1.5rem; 
+    }
+
+    .intro i {
+        font-size: 6rem; 
+    }
+
+    
+    .our_options h1 {
+        font-size: 3rem; 
+    }
+
+    .sub_optionss span {
+        font-size: 6rem; 
+    }
+
+  
+    .about .about_car h1 {
+        font-size: 3rem; 
+    }
+
+    .Toyota1 {
+        width: 800px; 
+        height: auto; 
+        padding-right: 300px;
+    }
+
+    .circle {
+        width: 500px; 
+        height: 500px; 
+        margin-left: 200px; 
+    }
+
+    .circle-title {
+        font-size: 2rem; 
+    }
+
+    .circle-title1 {
+        font-size: 5rem; 
+    }
+
+    
+    .specifications_car h1 {
+        font-size: 3rem; 
+    }
+
+    .section1, .section2 {
+        width: 500px; 
+        height: auto; 
+    }
+
+    .section1 p, .section2 p {
+        font-size: 1.2rem; 
+    }
+
+  
+    .estimation_costs h1 {
+        font-size: 3rem; 
+    }
+
+    .estimation_costs p {
+        font-size: 1.5rem; 
+    }
+
+    
+    .the_digitaltwin h1 {
+        font-size: 3rem; 
+    }
+
+    .the_digitaltwin p {
+        font-size: 1.5rem; 
+    }
+
+    
+    .cards-container {
+        gap: 30px; 
+    }
+
+    .card {
+        width: 250px; 
+    }
+
+   
+    #language-toggle {
+        top: 30px; 
+        right: 30px; 
+    }
+
+    
+    .slider-container {
+        width: 90%; 
+    }
+
+    
+    #navigation-buttons {
+        bottom: 20px; 
+        right: 20px; 
+    }
+
+    .section2 {
+        width: 550px;
+        height: 200px; 
+        font-size: 20px;
+        border: 1px solid #A95BF3;
+        background-color: black;
+        border-radius: 50px;
+        box-shadow: 0px 15px 8px #A95BF3;
+        transition: all 0.3s ease-in-out; 
+        overflow: hidden; 
+        position: relative; 
+        
+    }
+
+    
+    
+}
+
+@media (min-width: 1025px) {
+    .The_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .The_list li {
+        margin: 0 20px;
+    }
+
+    .The_list li  a{
+       font-size: 25px;
+       
+    }
+
+    .The_Title {
+        font-size: 40px;
+    }
+
+    .intro1 {
+        font-size: 20px;
+    }
+
+    .specification_boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section1 {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .section1 h1 {
+        font-size: 24px;
+    }
+
+    
+    .estimation_costs input {
+        width: 30%;
+    }
+
+    .estimation_costs button {
+        padding: 15px;
+        margin: 5px;
+    }
+
+  
+    .card {
+        width: 22%;
+        margin: 10px;
+    }
+
+ 
+    #navigation-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #scroll-up, #scroll-up1,#scroll-up2,#scroll-up3,#scroll-up4, #scroll-down {
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .list1 {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    
+}
+
+ 
+
+
+
+ 
+
+
+ 
+
+ 
+
+
+

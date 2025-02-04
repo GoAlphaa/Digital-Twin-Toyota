@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Twin for Multi-Mode Vehicles</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=view_in_ar" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brain.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+ 
+</head>
+
+
+
+
+<body>
+
+
+
+    <div id="content">
+        
+        <header class="the_header">
+
+            <div class="list1">
+
+               
+                <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+                <ul class="The_list" id="nav-list">
+                    <li><a href="#about_the_car" id="about-car-link">About Car</a></li>
+                    <li><a href="#car_specifications" id="specification-car-link">Car Specifications</a></li>
+                    <li><a href="#the_car_actual_costs" id="the_actual_costs">Actual Costs</a></li>
+                    <li><a href="#digital_twin" id="digital-twin-link">Managerial Accounting Practices</a></li>
+                </ul>
+
+            </div>
+
+        </header>
+        
+
+        <main>
+
+          <div class="The_Title">
+            <h1 id="main-title">
+                New Era in the Digital Twins 
+                <br> <span id="sub_title">for Toyota Camry Triadex</span>
+            </h1>
+        </div>
+        <div class="intro">
+            <i class='bx bxs-down-arrow-circle bx-flashing' style='color:#a95bf3' ></i>
+
+            <p class="intro1">
+
+                Welcome to our site! Explore the groundbreaking Toyota Camry Triadex 2024, reimagined with digital twin technology. This platform empowers users to visualize and discover the innovative design, advanced features, and futuristic style of this iconic car. By leveraging cutting-edge simulations, users can predict costs, assess performance, and explore dynamic functionalities. Additionally, our tools analyze competitive advantages, ensuring you understand the impact of digital transformation in the automotive world. Dive in to unlock a world of possibilities, innovation, and smarter decision-making for your future vehicle!</p>
+        </div>
+
+        <div class="our_options">
+            <h1 id="options-heading">Discover Our Object within Digital Twin</h1> 
+            <div class="optionss">
+                <div class="sub_optionss">
+                    <span id="logo1" class="material-symbols-outlined"> view_in_ar </span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="about" id="about_the_car">
+
+        <div class="about_car">
+
+            <h1>About  Toyota Camry Triadex 2024</h1>
+
+            <div class="car_design">
+               
+                <div class="circle">
+                    <h3 class="circle-title">Toyota Camry Triadex 2024</h3>
+                    <h3 class="circle-title1"><i class='bx bx-caret-left-circle bx-tada' style='color:#ffffff' ></i></h3>
+                    <img class="Toyota1" src="assets/img/toyota camry.png" alt="Toyota Camry">
+                </div>
+
+            </div>
+
+            <div class="about_toyota">
+                The Toyota Camry Triadex 2024 is a revolutionary car that can drive on land, sail in water, and even fly in the air. This futuristic vehicle represents a groundbreaking step in the evolution of transportation. The website created for this project will help simulate the car’s functionality and predict potential cost contributions in the future. Toyota was chosen for this project because of its leadership in both car manufacturing and cost accounting. This innovative concept highlights the future of cars, combining advanced technology with efficient cost management to reshape the automotive industry.
+            </div>
+           
+        </div>
+
+    </section>
+
+
+    <section class="specifications" >
+
+        <div class="specifications_car" id="car_specifications">
+            
+            <h1>Car Specifications</h1>
+          
+            <div class="specification_boxes">
+                
+                <div class="section1">
+                    <h1>Exterior Structure</h1>
+                    <p>Constructed using high-strength steel, carbon fibers, and aluminum to balance durability and weight reduction. The design mimics aerodynamics used in aviation and marine technology.</p>
+                </div>
+                
+                <div class="section1">
+                    <h1>Energy System</h1>
+                    <p>Advanced hybrid powertrain combining gasoline and electric engines, integrated solar panels, and fast-charging capabilities for electric batteries.</p>
+                </div>
+                
+                <div class="section1">
+                    <h1>Drive Systems</h1>
+                    <p>Quad drive (2WD for land), jet propulsion for water navigation, and jet engines for aerial operations.</p>
+                </div>
+               
+                <div class="section1">
+                    <h1>Interior Design</h1>
+                    <p>Ergonomic and intelligent seats with multi-position capabilities and heating/cooling systems, ensuring comfort across different environments.</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="Actual_Costs">
+        <div class="car_actual_costs" id="the_car_actual_costs">
+            <h1 class="the_cost">Actual Costs of the Car</h1>
+
+            <div class="costs1">
+                <div class="specification_boxes">
+                    <div class="section2">
+                        <h1>Material and Manufacturing Costs</h1>
+                       
+                        <div class="content">
+                            <p>Material Costs: Use of carbon fibers and aluminum for durability reduces the cost per vehicle to $15,000.</p>
+                            <p>Manufacturing Costs: According to the complexity of the modern design, these costs are increasing by $8000 per car.</p>
+     
+                        </div>
+
+                                              
+                    </div>
+                    <div class="section2">
+                        <h1>Technology and Development Costs</h1>
+                        <div class="content">
+                            <p>Renew Power Costs: There costs are $5000.</p>
+                            <p>Fingerprint Control Devices: There costs are $1500</p>
+                            <p>Digital Twin Costs per Car: it will cost $780 per car. <span onclick="popup1()">Click for more info</span></p>
+     
+                        </div>                    
+                    </div>
+                    <div class="section2">
+                        <h1>Drive Systems for Toyota Camry</h1>
+                        <div class="content">
+                            <p>Flight System Cost: Developing this system will cost $10000</p>
+                            <p>Water Propulsion System: It will cost $4000</p>
+     
+                        </div>                    
+                    </div>
+                    <div class="section2">
+                        <h1>Interior Design and R&D Costs</h1>
+                        <div class="content">
+                            <p>The Interior & Exterior Design: it includes interior structure design and interior decorations which cost about $8000 per car.</p>
+                            <p>Research and Development Costs: Because of the complexity of modern technologies then, these costs will increase to $6000</p>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="Cost_Estimation">
+          
+            <div class="estimation_costs" id="the_car_estimation_costs">
+               
+                <h1 class="the_estimation">Costs Estimation of Toyota Camry Traidex 2024</h1>
+               
+                <input id="cost-input" type="text" placeholder="Enter your Expected Cost of Car (value in dollars)">
+               
+                <div id="buttonss">
+
+                <button id="predict-btn">Check Suitable Cost</button>
+                <button id="predict-btn1">Make Prediction</button>
+                <button id="predict-btn2">Make a Chart</button>
+
+                 </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+     
+ 
+        <section class="digitaltwin">
+           
+            <div class="the_digitaltwin" id="digital_twin">
+               
+                <h1>Managerial Accounting Practices</h1>
+                
+                <p>Managerial accounting employs various techniques to enhance business performance and decision-making. Target costing sets cost goals for profitability, while activity-based costing (ABC) and time-driven ABC (TDABC) allocate costs accurately, incorporating time as a key driver. Methods like just-in-time (JIT) reduce waste, and total quality management (TQM) ensures continuous process improvement. Kaizen costing promotes incremental cost reduction, and lifecycle costing evaluates costs over a product’s lifespan. Customer relationship management (CRM) focuses on customer needs to boost loyalty and revenue. Using AI to analyze data from these practices enables actionable insights and better strategies for efficiency and profitability.</p>
+           
+            </div>
+
+            <div class="slider-container">
+
+                <div class="slider">
+                   
+                    <div class="card">
+                       
+                        <img src="assets/img/1.png" alt="Card 1">
+                       
+                        <div class="card-details">
+                            <h3>Target Costing</h3>
+                            <p>Design the product in a way that ensures the achievement of the target cost set in advance, taking into account market requirements and customer needs, which helps in achieving a competitive price and sustainable profitability.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        
+                        <img src="assets/img/4.png" alt="Card 2">
+
+                        <div class="card-details">
+                            <h3>Activity-Based Costing - ABC</h3>
+                            <p>Accurate allocate costs based on resource-consuming activities, providing comprehensive insights to optimize cost and profitability strategies.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                       
+                        <img src="assets/img/5.png" alt="Card 3">
+                       
+                        <div class="card-details">
+                            <h3>Time-Driven Activity-Based Costing - TDABC</h3>
+                            <p>Calculating costs based on real-time for different activities, supporting faster and more accurate decision-making to improve operational efficiency.</p>
+                        </div>
+
+                    </div>
+                   
+                    <div class="card">
+                      
+                        <img src="assets/img/3.png" alt="Card 4">
+                      
+                        <div class="card-details">
+                            <h3>Just-In-Time - JIT</h3>
+                            <p>A production strategy based on minimizing inventory by manufacturing goods only when needed, which reduces waste and enhances efficiency in the supply chain.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                       
+                        <img src="assets/img/6.png" alt="Card 5">
+
+                        <div class="card-details">
+                            <h3>Total Quality Management - TQM</h3>
+                            <p>Continuous quality improvement at all stages of production and services, ensuring exceptional customer value and sustainable customer satisfaction.</p>
+                        </div>
+
+                    </div>
+                  
+                    <div class="card">
+
+                        <img src="assets/img/7.png" alt="Card 6">
+                       
+                        <div class="card-details">
+                            <h3>Kaizen Costing</h3>
+                            <p>Focus on gradual and continuous improvement in production processes, leading to reduced costs and enhanced overall performance.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                      
+                        <img src="assets/img/8.png" alt="Card 7">
+
+                        <div class="card-details">
+                            <h3>Lifecycle Costing</h3>
+                            <p>Analyze product-related costs throughout its entire lifecycle, from design to disposal, to ensure strategic decisions are made that support sustainability and efficiency.</p>
+                        </div>
+
+                    </div>
+                   
+                    <div class="card">
+
+                        <img src="assets/img/9.png" alt="Card 7">
+
+                        <div class="card-details">
+                            <h3>Customer Relationship Management - CRM</h3>
+                            <p>Build strong customer relationships through data management and personalization of experiences, boosting loyalty and contributing to higher revenue.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+               
+                <button class="nav-btn prev-btn" id="btn1">&#8249;</button>
+                <button class="nav-btn next-btn" id="btn2">&#8250;</button>
+
+            </div>
+        </section>
+        </div>
+   
+  
+
+    <div id="navigation-buttons">
+        
+        <button id="scroll-up2" class="nav-btn1">
+            <span id="toggle-text">  <i class='bx bxs-report' style='color:#ffffff'  ></i></span> 
+        </button>
+
+        <button id="scroll-up4" class="nav-btn1">
+            <span id="toggle-text">  <i class='bx bx-briefcase-alt-2' style='color:#ffffff' ></i></span> 
+        </button>
+        
+        <button id="scroll-up3" class="nav-btn1">
+            <span id="toggle-text">  <i class='bx bxs-trophy' style='color:#ffffff'  ></i></span> 
+        </button>
+
+        <button id="scroll-up1" class="nav-btn1">
+            <span id="toggle-text">  <i class='bx bx-message-square-dots' style='color:#ffffff'  ></i></span> 
+        </button>
+
+        <button id="scroll-up" class="nav-btn1">
+            <i class='bx bx-chevron-up'></i>
+        </button>
+
+        <button id="scroll-down" class="nav-btn1">
+            <i class='bx bx-chevron-down'></i>
+        </button>
+        
+    </div>
+    
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
