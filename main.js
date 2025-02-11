@@ -645,7 +645,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
     const apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"; // Gemini API endpoint
-    const apiKey = "AIzaSyBsBamqLZXn6B7ReugVysyfqxiszOvkzxo";  
+    const apiKey = "AIzaSyDO31NU4lYnMXHXj34Jq3d1Zh7oLbR45iM";  
 
   
     const costData = {
